@@ -13,4 +13,8 @@ node_modules
 cdk.context.json
 
 # coverage
-/coverage
+/test/**/TestResults
+
+# .NET Core build folders
+bin/
+obj/
