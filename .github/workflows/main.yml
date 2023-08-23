@@ -26,7 +26,7 @@ jobs:
       - name: 'Backend: Build'
         run: dotnet build --no-restore
       - name: 'Backend: Test'
-        run: dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        run: dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=cobertura
 
       - name: Publish Code Coverage
         uses: codecov/codecov-action@v3
